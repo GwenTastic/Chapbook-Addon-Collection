@@ -13,7 +13,7 @@ Arguments:
 
 ## Example Code:<br>
  > ### Display an Array Inventory:
-> ```hs
+> ```ruby
 > inventory: ["An apple", "A banana"]
 > --
 > {List Collection: inventory}
@@ -23,7 +23,7 @@ Arguments:
 > > A banana
 
 > ### Display an Array Inventory with counted numbers:
-> ```hs
+> ```ruby
 > inventory: ["An apple", "A banana"]
 > --
 > {List Collection: inventory, AllowCount: true}
@@ -34,7 +34,7 @@ Arguments:
 
 
 > ### Display an Object Inventory but show `color` instead of the `name` property:
-> ```hs
+> ```ruby
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
 > --
 > {List Collection: inventory, DisplayName: "color"}
@@ -44,7 +44,7 @@ Arguments:
 > > darkred
 
 > ### Display an Object Inventory but with additional selected Properties (`color` > and `count`):
-> ```hs
+> ```ruby
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
 > --
 > Name - Color - Item Count: <br>
@@ -58,7 +58,7 @@ Arguments:
 
 
 > ### Display an Object Inventory with `Detailed: "all"` property which will show all properties:
-> ```hs
+> ```ruby
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
 > --
 > Inv. Nr. - Name - Item Count - Color - Value:
