@@ -13,7 +13,7 @@ Arguments:
 
 Example Code:<br>
  > Display an Array Inventory:
- ```sml
+ ```ml
  inventory: ["An apple", "A banana"]
  --
  {List Collection: inventory}
@@ -24,7 +24,7 @@ Example Code:<br>
  ```
 
 > Display an Array Inventory with counted numbers:
-```sml
+```ml
 inventory: ["An apple", "A banana"]
 --
 {List Collection: inventory, AllowCount: true}
@@ -36,7 +36,7 @@ inventory: ["An apple", "A banana"]
 ```
 
 > Display an Object Inventory but show `color` instead of the `name` property:
-```sml
+```ml
 inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
 --
 {List Collection: inventory, DisplayName: "color"}
@@ -47,7 +47,7 @@ darkred
 ```
 
 > Display an Object Inventory but with additional selected Properties (`color` and `count`):
-```sml
+```ml
 inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
 --
 Name - Color - Item Count: <br>
@@ -60,7 +60,7 @@ Cherries - darkred - 4
 ```
 
 > Display an Object Inventory with `Detailed: "all"` property which will show all properties:
-```sml
+```ml
 inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
 --
 Inv. Nr. - Name - Item Count - Color - Value:
