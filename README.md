@@ -33,22 +33,22 @@ Arguments:
 > > 2 - A banana
 
 
-> #### Display an Object Inventory but show `color` instead of the `name` property:
+> #### Display an Object Inventory but show `Color` instead of the `Name` property:
 > ```hs
 > inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
 > --
-> {List Collection: inventory, DisplayName: "color"}
+> {List Collection: inventory, DisplayName: "Color"}
 > ```
 > Expected Output:
 > > red <br>
 > > darkred
 
-> #### Display an Object Inventory but with additional selected Properties (`color` and `count`):
+> #### Display an Object Inventory but with additional selected Properties (`Color` and `Count`):
 > ```hs
 > inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
 > --
 > name - color - item count  <br>
-> {List Collection: inventory, Detailed: "color count"}
+> {List Collection: inventory, Detailed: "Color Count"}
 > ```
 > Expected Output:
 > > name - color - item count  <br>
