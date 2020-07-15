@@ -43,7 +43,7 @@ Arguments:
 > > red <br>
 > > darkred
 
-> #### Display an Object Inventory but with additional selected Properties (`color` > and `count`):
+> #### Display an Object Inventory but with additional selected Properties (`color` and `count`):
 > ```hs
 > inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
 > --
