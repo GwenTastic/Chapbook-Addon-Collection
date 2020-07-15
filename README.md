@@ -34,9 +34,9 @@ inventory: ["An apple", "A banana"]
 
 > Display an Object Inventory but show `color` instead of the `name` property:
 ```hs
-inventory2: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
+inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
 --
-{List Collection: inventory2, DisplayName: "color"}
+{List Collection: inventory, DisplayName: "color"}
 -- Output:
 -- red
 -- darkred
@@ -44,10 +44,10 @@ inventory2: { Strawberries: { name: "Strawberries", count: 2, color: "red", valu
 
 > Display an Object Inventory but with additional selected Properties (`color` and `count`):
 ```hs
-inventory2: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
+inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
 --
 Name - Color - Item Count: <br>
-{List Collection: inventory2, Detailed: "color count"}
+{List Collection: inventory, Detailed: "color count"}
 -- Output:
 -- Name - Color - Item Count:
 -- Strawberries - red - 2
@@ -56,10 +56,10 @@ Name - Color - Item Count: <br>
 
 > Display an Object Inventory with `Detailed: "all"` property which will show all properties:
 ```hs
-inventory2: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
+inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
 --
 Inv. Nr. - Name - Item Count - Color - Value:
-{List Collection: inventory2, Detailed: "all", AllowCount: true}
+{List Collection: inventory, Detailed: "all", AllowCount: true}
 -- Output:
 -- Inv. Nr. - Name - Item Count - Color - Value:
 -- 1 - Strawberries - 2 - red - 10
