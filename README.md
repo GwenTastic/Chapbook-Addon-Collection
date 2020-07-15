@@ -3,7 +3,7 @@
 To install the addon simply copy and paste the contents of the `.js` file into your `Story's JavaScript` page.
 ## {List Collection: \<collection> [, DisplayName: \<string>] [, Detailed: \<string>] [, AllowCount: true] }
 Takes in an array or object collection to display it's contents as a list. <br>
-Source Code: [ListCollection.js]() <br>
+Source Code: [ListCollection.js](https://github.com/GwenTastic/Chapbook-Addon-Collection/blob/master/LIst%20Collection/List%20Collection.js "List Collection.js") <br>
 
 Arguments:
 > - **`<collection>`** [Mandetory] the array or object of the collection which contents you want to be listed.
@@ -21,7 +21,7 @@ Example Code:<br>
  -- An apple
  -- A banana
  ```
- 
+
 > Display an Array Inventory with counted numbers:
 ```hs
 inventory: ["An apple", "A banana"]
