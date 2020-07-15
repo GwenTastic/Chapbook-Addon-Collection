@@ -35,7 +35,7 @@ Arguments:
 
 > ### Display an Object Inventory but show `color` instead of the `name` property:
 > ```hs
-> inventory: { Strawberries: { Name:"Strawberries", Count:2, Color:"red", Value:10 }, Cherries: { Name:"Cherries", Count:4, Color:"darkred", Value: 36 } }
+> inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
 > --
 > {List Collection: inventory, DisplayName: "color"}
 > ```
@@ -45,13 +45,13 @@ Arguments:
 
 > ### Display an Object Inventory but with additional selected Properties (`color` > and `count`):
 > ```hs
-> inventory: { Strawberries: { Name:"Strawberries", Count:2, Color:"red", Value:10 }, Cherries: { Name:"Cherries", Count:4, Color:"darkred", Value: 36 } }
+> inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
 > --
-> name - color -item count  <br>
+> name - color - item count  <br>
 > {List Collection: inventory, Detailed: "color count"}
 > ```
 > Expected Output:
-> > name - color -item count  <br>
+> > name - color - item count  <br>
 > > Strawberries - red - 2 <br>
 > > Cherries - darkred - 4
 
@@ -59,7 +59,7 @@ Arguments:
 
 > ### Display an Object Inventory with `Detailed: "all"` property which will show all properties:
 > ```hs
-> inventory: { Strawberries: { Name:"Strawberries", Count:2, Color:"red", Value:10 }, Cherries: { Name:"Cherries", Count:4, Color:"darkred", Value: 36 } }
+> inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
 > --
 > inv. nr. - name - item count - color - value
 > {List Collection: inventory, Detailed: "all", AllowCount: true}
