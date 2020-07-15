@@ -11,63 +11,60 @@ Arguments:
 > - **`Detailed`** [Optional, for `Objects` only] takes in additional object property names to be displayed, multiple property names are simply separated by a space. There is a build in keyword `all` which will list all properties (except for the `DisplayName` choosen property).
 > - **`AllowCount`** [Optional, for `Arrays` and `Objects`] will display a number at the front of the list which represents the index of the item inside the collection.
 
-Example Code:<br>
+## Example Code:<br>
  > Display an Array Inventory:
- ```ml
- inventory: ["An apple", "A banana"]
- --
- {List Collection: inventory}
- (* Output:
- An apple
- A banana
-*)
- ```
+> ```sml
+> inventory: ["An apple", "A banana"]
+> --
+> {List Collection: inventory}
+> ```
+>  Expected Output:
+> > An apple <br>
+> > A banana
 
-> Display an Array Inventory with counted numbers:
-```ml
-inventory: ["An apple", "A banana"]
---
-{List Collection: inventory, AllowCount: true}
+> ### Display an Array Inventory with counted numbers:
+> ```sml
+> inventory: ["An apple", "A banana"]
+> --
+> {List Collection: inventory, AllowCount: true}
+> ```
+> Expected Output:
+> > 1 - An apple <br>
+> > 2 - A banana
 
-(* Output:
-1 - An apple
-2 - A banana
-*)
-```
 
-> Display an Object Inventory but show `color` instead of the `name` property:
-```ml
-inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
---
-{List Collection: inventory, DisplayName: "color"}
-(* Output:
-red
-darkred
-*)
-```
+> ### Display an Object Inventory but show `color` instead of the `name` property:
+> ```sml
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> {List Collection: inventory, DisplayName: "color"}
+> ```
+> Expected Output:
+> > red <br>
+> > darkred
 
-> Display an Object Inventory but with additional selected Properties (`color` and `count`):
-```ml
-inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
---
-Name - Color - Item Count: <br>
-{List Collection: inventory, Detailed: "color count"}
-(* Output:
-Name - Color - Item Count:
-Strawberries - red - 2
-Cherries - darkred - 4
-*)
-```
+> ### Display an Object Inventory but with additional selected Properties (`color` > and `count`):
+> ```sml
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Name - Color - Item Count: <br>
+> {List Collection: inventory, Detailed: "color count"}
+> ```
+> Expected Output:
+> > Name - Color - Item Count: <br>
+> > Strawberries - red - 2 <br>
+> > Cherries - darkred - 4
 
-> Display an Object Inventory with `Detailed: "all"` property which will show all properties:
-```ml
-inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
---
-Inv. Nr. - Name - Item Count - Color - Value:
-{List Collection: inventory, Detailed: "all", AllowCount: true}
-(* Output:
-Inv. Nr. - Name - Item Count - Color - Value:
-1 - Strawberries - 2 - red - 10
-2 - Cherries - 4 - darkred - 36
-*)
-```
+
+
+> ### Display an Object Inventory with `Detailed: "all"` property which will show all properties:
+> ```sml
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Inv. Nr. - Name - Item Count - Color - Value:
+> {List Collection: inventory, Detailed: "all", AllowCount: true}
+> ```
+> Expected Output:
+> > Inv. Nr. - Name - Item Count - Color - Value: <br>
+> > 1 - Strawberries - 2 - red - 10 <br>
+> > 2 - Cherries - 4 - darkred - 36 <br>
