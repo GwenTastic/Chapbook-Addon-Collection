@@ -13,7 +13,7 @@ Arguments:
 
 ## Example Code:<br>
  > ### Display an Array Inventory:
-> ```ruby
+> ```hs
 > inventory: ["An apple", "A banana"]
 > --
 > {List Collection: inventory}
@@ -23,7 +23,7 @@ Arguments:
 > > A banana
 
 > ### Display an Array Inventory with counted numbers:
-> ```ruby
+> ```hs
 > inventory: ["An apple", "A banana"]
 > --
 > {List Collection: inventory, AllowCount: true}
@@ -34,7 +34,7 @@ Arguments:
 
 
 > ### Display an Object Inventory but show `color` instead of the `name` property:
-> ```ruby
+> ```hs
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
 > --
 > {List Collection: inventory, DisplayName: "color"}
@@ -44,7 +44,7 @@ Arguments:
 > > darkred
 
 > ### Display an Object Inventory but with additional selected Properties (`color` > and `count`):
-> ```ruby
+> ```hs
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
 > --
 > Name - Color - Item Count: <br>
@@ -58,7 +58,7 @@ Arguments:
 
 
 > ### Display an Object Inventory with `Detailed: "all"` property which will show all properties:
-> ```ruby
+> ```hs
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
 > --
 > Inv. Nr. - Name - Item Count - Color - Value:
@@ -67,4 +67,72 @@ Arguments:
 > Expected Output:
 > > Inv. Nr. - Name - Item Count - Color - Value: <br>
 > > 1 - Strawberries - 2 - red - 10 <br>
-> > 2 - Cherries - 4 - darkred - 36 <br>
+> > 2 - Cherries - 4 - darkred - 36 
+
+<br><br><br>
+(ignore this, it's just testing)
+
+hs
+> ```hs
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Inv. Nr. - Name - Item Count - Color - Value
+> {List Collection: inventory, Detailed: "all", AllowCount: true}
+> ```
+
+ml
+> ```ml
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Inv. Nr. - Name - Item Count - Color - Value
+> {List Collection: inventory, Detailed: "all", AllowCount: true}
+> ```
+
+sml
+> ```sml
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Inv. Nr. - Name - Item Count - Color - Value
+> {List Collection: inventory, Detailed: "all", AllowCount: true}
+> ```
+
+ruby
+> ```ruby
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Inv. Nr. - Name - Item Count - Color - Value
+> {List Collection: inventory, Detailed: "all", AllowCount: true}
+> ```
+
+js
+> ```js
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Inv. Nr. - Name - Item Count - Color - Value
+> {List Collection: inventory, Detailed: "all", AllowCount: true}
+> ```
+
+fortran
+> ```fortran
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Inv. Nr. - Name - Item Count - Color - Value
+> {List Collection: inventory, Detailed: "all", AllowCount: true}
+> ```
+
+IRPF90
+> ```IRPF90
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Inv. Nr. - Name - Item Count - Color - Value
+> {List Collection: inventory, Detailed: "all", AllowCount: true}
+> ```
+
+QML
+> ```QML
+> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
+> --
+> Inv. Nr. - Name - Item Count - Color - Value
+> {List Collection: inventory, Detailed: "all", AllowCount: true}
+> ```
+
