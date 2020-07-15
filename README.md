@@ -13,55 +13,61 @@ Arguments:
 
 Example Code:<br>
  > Display an Array Inventory:
- ```hs
+ ```sml
  inventory: ["An apple", "A banana"]
  --
  {List Collection: inventory}
- -- Output:
- -- An apple
- -- A banana
+ (* Output:
+ An apple
+ A banana
+*)
  ```
 
 > Display an Array Inventory with counted numbers:
-```hs
+```sml
 inventory: ["An apple", "A banana"]
 --
 {List Collection: inventory, AllowCount: true}
--- Output:
--- 1 - An apple
--- 2 - A banana
+
+(* Output:
+1 - An apple
+2 - A banana
+*)
 ```
 
 > Display an Object Inventory but show `color` instead of the `name` property:
-```hs
+```sml
 inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
 --
 {List Collection: inventory, DisplayName: "color"}
--- Output:
--- red
--- darkred
+(* Output:
+red
+darkred
+*)
 ```
 
 > Display an Object Inventory but with additional selected Properties (`color` and `count`):
-```hs
+```sml
 inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
 --
 Name - Color - Item Count: <br>
 {List Collection: inventory, Detailed: "color count"}
--- Output:
--- Name - Color - Item Count:
--- Strawberries - red - 2
--- Cherries - darkred - 4
+(* Output:
+Name - Color - Item Count:
+Strawberries - red - 2
+Cherries - darkred - 4
+*)
 ```
 
 > Display an Object Inventory with `Detailed: "all"` property which will show all properties:
-```hs
+```sml
 inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36} }
 --
 Inv. Nr. - Name - Item Count - Color - Value:
 {List Collection: inventory, Detailed: "all", AllowCount: true}
--- Output:
--- Inv. Nr. - Name - Item Count - Color - Value:
--- 1 - Strawberries - 2 - red - 10
--- 2 - Cherries - 4 - darkred - 36
+(* Output:
+Inv. Nr. - Name - Item Count - Color - Value:
+1 - Strawberries - 2 - red - 10
+2 - Cherries - 4 - darkred - 36
+*)
 ```
