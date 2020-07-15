@@ -1,15 +1,16 @@
 # Gwen's Chapbook Addon Collection
 ## Installing the addon
 To install the addon simply copy and paste the contents of the `.js` file into your `Story's JavaScript` page.
-## {List Collection: \<collection> [, DisplayName: \<string>] [, Detailed: \<string>] [, AllowCount: true] }
+## {List Collection: \<collection> [, DisplayName: \<string>] [, Detailed: \<string>] [, AllowCount: true] [, Divider: <string>]}
 Takes in an array or object collection to display it's contents as a list. <br>
 Source Code: [ListCollection.js](https://github.com/GwenTastic/Chapbook-Addon-Collection/blob/master/LIst%20Collection/List%20Collection.js "List Collection.js") <br>
 
 Arguments:
 > - **`<collection>`** [Mandetory] the array or object of the collection which contents you want to be listed.
-> - **`DisplayName`** [Optional, for `Objects` only] overwrites the default property `.Name` or `.name` that it looks for to display as name, which allows you to select any other property.
-> - **`Detailed`** [Optional, for `Objects` only] takes in additional object property names to be displayed, multiple property names are simply separated by a space. There is a build in keyword `all` which will list all properties (except for the `DisplayName` choosen property).
+> - **`DisplayName`** [Optional, only `Objects`] overwrites the default property `.Name` or `.name` that it looks for to display as name, which allows you to select any other property.
+> - **`Detailed`** [Optional, only `Objects`] takes in additional object property names to be displayed, multiple property names are simply separated by a space. There is a build in keyword `all` which will list all properties (except for the `DisplayName` choosen property).
 > - **`AllowCount`** [Optional, for `Arrays` and `Objects`] will display a number at the front of the list which represents the index of the item inside the collection.
+> - **`Divider`** [Optional, for `Arrays` and `Objects`] will change the default divider `" - "`.
 
 ## Example Code:<br>
  > #### Display an Array Inventory:
@@ -68,3 +69,15 @@ Arguments:
 > > inv. nr. - name - item count - color - value <br>
 > > 1 - Strawberries - 2 - red - 10 <br>
 > > 2 - Cherries - 4 - darkred - 36
+
+> #### Display Object Inventory with changed divider symbol: <br>
+> ```hs
+> inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
+> --
+> inv. nr. - name - item count - color - value <br>
+> {List Collection: inventory2, Divider: " :: ", AllowCount: true, Detailed: "all"}
+> ```
+> Expected Output:
+> > inv. nr. - name - item count - color - value <br>
+> > 1 :: Strawberries :: 2 :: red :: 10
+> > 2 :: Cherries :: 4 :: darkred :: 36
