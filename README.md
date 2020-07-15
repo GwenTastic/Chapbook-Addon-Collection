@@ -88,14 +88,6 @@ ml
 > {List Collection: inventory, Detailed: "all", AllowCount: true}
 > ```
 
-sml
-> ```sml
-> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
-> --
-> Inv. Nr. - Name - Item Count - Color - Value
-> {List Collection: inventory, Detailed: "all", AllowCount: true}
-> ```
-
 ruby
 > ```ruby
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
@@ -104,35 +96,27 @@ ruby
 > {List Collection: inventory, Detailed: "all", AllowCount: true}
 > ```
 
-js
-> ```js
+
+hs
+> ```hs
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
 > --
-> Inv. Nr. - Name - Item Count - Color - Value
+> inv. nr. - name - item count - color - value
 > {List Collection: inventory, Detailed: "all", AllowCount: true}
 > ```
 
-fortran
-> ```fortran
+ml
+> ```ml
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
 > --
-> Inv. Nr. - Name - Item Count - Color - Value
+> inv. nr. - name - item count - color - value
 > {List Collection: inventory, Detailed: "all", AllowCount: true}
 > ```
 
-IRPF90
-> ```IRPF90
+ruby
+> ```ruby
 > inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
 > --
-> Inv. Nr. - Name - Item Count - Color - Value
+> inv. nr. - name - item count - color - value
 > {List Collection: inventory, Detailed: "all", AllowCount: true}
 > ```
-
-QML
-> ```QML
-> inventory: { Strawberries: { name: "Strawberries", count: 2, color: "red", value: 10 }, Cherries: { name: "Cherries", count: 4, color: "darkred", value:  36 } }
-> --
-> Inv. Nr. - Name - Item Count - Color - Value
-> {List Collection: inventory, Detailed: "all", AllowCount: true}
-> ```
-
