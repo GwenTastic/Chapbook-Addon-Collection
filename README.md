@@ -12,7 +12,7 @@ Arguments:
 > - **`AllowCount`** [Optional, for `Arrays` and `Objects`] will display a number at the front of the list which represents the index of the item inside the collection.
 
 ## Example Code:<br>
- > ### Display an Array Inventory:
+ > #### Display an Array Inventory:
 > ```hs
 > inventory: ["An apple", "A banana"]
 > --
@@ -22,7 +22,7 @@ Arguments:
 > > An apple <br>
 > > A banana
 
-> ### Display an Array Inventory with counted numbers:
+> #### Display an Array Inventory with counted numbers:
 > ```hs
 > inventory: ["An apple", "A banana"]
 > --
@@ -33,7 +33,7 @@ Arguments:
 > > 2 - A banana
 
 
-> ### Display an Object Inventory but show `color` instead of the `name` property:
+> #### Display an Object Inventory but show `color` instead of the `name` property:
 > ```hs
 > inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
 > --
@@ -43,7 +43,7 @@ Arguments:
 > > red <br>
 > > darkred
 
-> ### Display an Object Inventory but with additional selected Properties (`color` > and `count`):
+> #### Display an Object Inventory but with additional selected Properties (`color` > and `count`):
 > ```hs
 > inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
 > --
@@ -57,7 +57,7 @@ Arguments:
 
 
 
-> ### Display an Object Inventory with `Detailed: "all"` property which will show all properties:
+> #### Display an Object Inventory with `Detailed: "all"` property which will show all properties:
 > ```hs
 > inventory: {Strawberries: {Name: "Strawberries", Count: 2, Color: "red", Value: 10}, Cherries: {Name: "Cherries", Count: 4, Color: "darkred", Value: 36}}
 > --
